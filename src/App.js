@@ -4,7 +4,6 @@ import Login from './components/login';
 import Signup from './components/signup';
 import PersonalCalendar from './components/personalCalendar';
 import GroupCalendar from './components/groupCalendar';
-import FirstPage from './components/firstPage';
 
 function App() {
   return (
