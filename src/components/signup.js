@@ -16,7 +16,7 @@ function Signup() {
 
     let response;
     try {
-      response = await axios.post('http://localhost:8282/users/signup', {
+      response = await axios.post('https://palendar-server-heroku.herokuapp.com/users/signup', {
         name,
         email,
         password,

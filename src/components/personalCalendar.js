@@ -55,7 +55,7 @@ function PersonalCalendar() {
   function getAppointments() {
     if (userId) {
       axios
-        .get('http://localhost:8282/appointments/calendar', {
+        .get('https://palendar-server-heroku.herokuapp.com/appointments/calendar', {
           params: {
             user_id: userId,
           },
@@ -84,7 +84,7 @@ function PersonalCalendar() {
 
   async function getUserId() {
     await axios
-      .get('http://localhost:8282/users/userId', {
+      .get('https://palendar-server-heroku.herokuapp.com/users/userId', {
         headers: {
           'x-access-token': localStorage.getItem('token'),
         },
@@ -153,7 +153,7 @@ function PersonalCalendar() {
   async function submitEvent(event) {
     event.preventDefault();
     const response = await axios.post(
-      'http://localhost:8282/appointments/new',
+      'https://palendar-server-heroku.herokuapp.com/appointments/new',
       {
         date: new Date(value),
         name,
@@ -174,13 +174,13 @@ function PersonalCalendar() {
 
   async function deleteEvent(eventId, eventUsersId) {
     if (eventUsersId.length <= 2) {
-      await axios.delete('http://localhost:8282/appointments/delete', {
+      await axios.delete('https://palendar-server-heroku.herokuapp.com/appointments/delete', {
         params: {
           eventId,
         },
       });
     } else {
-      await axios.patch('http://localhost:8282/appointments/remove_user', {
+      await axios.patch('https://palendar-server-heroku.herokuapp.com/appointments/remove_user', {
         eventId,
         userId,
       });

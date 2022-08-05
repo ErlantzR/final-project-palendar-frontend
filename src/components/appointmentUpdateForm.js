@@ -7,7 +7,7 @@ function AppointmentUpdateForm({ appointment }) {
   const [date, setDate] = useState(new Date(appointment.date).getTime() + 1000 * 3600);
 
   async function submitEvent() {
-    await axios.patch('http://localhost:8282/appointments/update', {
+    await axios.patch('https://palendar-server-heroku.herokuapp.com/appointments/update', {
       eventId: appointment._id,
       date: new Date(new Date(date).getTime() - 1000 * 3600),
       name,

@@ -42,7 +42,7 @@ function GroupCalendar() {
   function getAppointments() {
     if (userId) {
       axios
-        .get('http://localhost:8282/appointments/calendar', {
+        .get('https://palendar-server-heroku.herokuapp.com/appointments/calendar', {
           params: {
             user_id: userArray,
           },
@@ -70,7 +70,7 @@ function GroupCalendar() {
 
   async function getUserId() {
     await axios
-      .get('http://localhost:8282/users/userId', {
+      .get('https://palendar-server-heroku.herokuapp.com/users/userId', {
         headers: {
           'x-access-token': localStorage.getItem('token'),
         },
@@ -84,7 +84,7 @@ function GroupCalendar() {
   async function getAllUsers() {
     if (userId) {
       await axios
-        .get('http://localhost:8282/users/all', {
+        .get('https://palendar-server-heroku.herokuapp.com/users/all', {
           params: {
             user_id: userId,
           },
@@ -149,7 +149,7 @@ function GroupCalendar() {
     event.preventDefault();
     let response;
     try {
-      response = await axios.post('http://localhost:8282/appointments/new', {
+      response = await axios.post('https://palendar-server-heroku.herokuapp.com/appointments/new', {
         date: new Date(value),
         name,
         user_id: userArray,
