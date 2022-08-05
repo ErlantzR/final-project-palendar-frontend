@@ -1,6 +1,7 @@
+/* eslint-disable react/prop-types */
 import React, { useState } from 'react';
 import axios from 'axios';
-import './appointmentUpdateForm.css'
+import './appointmentUpdateForm.css';
 
 function AppointmentUpdateForm({ appointment }) {
   const [name, setName] = useState(appointment.name);
@@ -8,6 +9,7 @@ function AppointmentUpdateForm({ appointment }) {
 
   async function submitEvent() {
     await axios.patch('https://palendar-server-heroku.herokuapp.com/appointments/update', {
+      // eslint-disable-next-line no-underscore-dangle
       eventId: appointment._id,
       date: new Date(new Date(date).getTime() - 1000 * 3600),
       name,
@@ -32,7 +34,8 @@ function AppointmentUpdateForm({ appointment }) {
           onChange={(e) => setName(e.target.value)}
         />
 
-        <input className="input-button"
+        <input
+          className="input-button"
           disabled={!name}
           data-cy="submit"
           type="submit"

@@ -12,7 +12,7 @@ function Login() {
 
   async function loginUser(event) {
     event.preventDefault();
-    try{
+    try {
       const response = await axios.post('https://palendar-server-heroku.herokuapp.com/users/login', {
         email,
         password,
@@ -27,7 +27,7 @@ function Login() {
 
       setEmail('');
       setPassword('');
-    }catch {
+    } catch {
       setError('Please check your username and password.');
     }
   }
