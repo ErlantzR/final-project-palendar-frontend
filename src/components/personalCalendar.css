@@ -1,0 +1,730 @@
+/* * { border: solid 0.01px red } */
+
+.calbody {
+  background-image: url("../../public/images/mohammad-alizade-XgeZu2jBaVI-unsplash.jpg");
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center; 
+  
+}
+
+/* .calbox {
+  display: flex;
+  justify-content: center;
+  width: 400px;
+} */
+
+.center-element {
+  margin-top: 100px;
+  display: flex;
+  /* justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%; */
+  gap: 50px;
+  position: relative;
+  justify-content: center;
+  top: 5%;
+
+  /* align-items: center;  */
+}
+
+.navbar {
+  height: 50px;
+}
+
+.center-child {
+  /* border: 2px solid pink; */
+}
+
+.center-child1 {
+  /* border: 2px solid pink; */
+  width: 500px;
+}
+
+.center-child:first-child {
+  /* margin-right: 20px; */
+}
+
+
+
+/* --start-- APPOINTMENT SCROLL -----------------------------------------------------------------start-- */
+
+.user-scroll {
+  /* margin-top: 101px; */
+  background-color: rgba(255, 255, 255, 0.272);
+  width: 350px;
+  height: 540px;
+  overflow: scroll;
+  white-space: nowrap;
+  border-radius: 15px;
+}
+
+.user-scroll-list {
+  margin-left: 20px;
+  margin-right: 20px;
+  /* margin-top: 20px; */
+  height: 60px;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.268);
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.user-scroll-name {
+  margin-left: 30px;
+  font-size: 14px;
+}
+
+.checkbox {
+  display: flex;
+  margin-left: 20px;
+  filter: grayscale(1);
+}  
+
+.scroll {
+  overflow: scroll;
+  white-space: nowrap;
+}
+
+/* end .squaredThree */
+
+.appointmentscroll {
+  background-color: rgba(255, 255, 255, 0.272);
+  width: 500px;
+  height: 540px;
+  overflow: scroll;
+  white-space: nowrap;
+  border-radius: 15px;
+
+  /* display: flex; */
+  /* justify-content: right; */
+  /* align-items: right; */
+}    
+
+.header-buffer {
+  height: 120px;
+  position: relative;
+ 
+}    
+
+.appointment-overview {
+  display: flex;
+  inline-size: 150px;
+  overflow-wrap: break-word;
+}
+
+.scroll-list {
+  margin-left: 15px;
+  margin-right: 15px;
+  height: 90px;
+  max-height: 150px;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.268);
+  display: flex;
+  /* align-items: center; */
+  font-size: 14px;
+  display: block;
+}
+
+.scroll-date {
+  margin-top: 6px;
+  letter-spacing: 1.3px;
+  color: #000000;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+}
+
+.scroll-date1 {
+  font-weight: bold;
+  margin-top: 6px;
+  letter-spacing: 1.3px;
+  color: #000000;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+}
+
+.delete-button {
+  /* background-color: rgba(0, 0, 0, 0.8); */
+  /* color: rgb(57, 56, 56);
+  height: 17px;
+  width: 60px;
+  font-size: 10px;
+  margin-right: 20px; */
+  background: none!important;
+  border: none;
+  padding: 0!important;
+  /*optional*/
+  font-family: arial, sans-serif;
+  /*input has OS specific font-family*/
+  color: rgba(108, 108, 108, 0.796);
+  text-decoration: underline;
+  cursor: pointer;
+  background-color: #00000051;
+  text-align: center;
+  color: #00000085;
+  height: 25px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+}
+
+.delete-button:hover {
+  color: #64358a;
+}
+
+/* --end-- APPOINTMENT SCROLL -----------------------------------------------------------------end-- */
+
+.nav-center {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+
+/* --start-- SELECT  -----------------------------------------------------------------start-- */
+
+.group-select-body {
+  margin-top: 40px;
+  /* background-color: rgba(0, 0, 0, 0.8); */
+  /* background-color: rgba(15, 15, 15, 0.44); */
+  height: 160px;
+  width: 600px;
+  border-radius: 15px;
+  color: white;
+  /* overflow: scroll;
+  white-space: nowrap; */
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.group-select-body1 {
+  margin-top: 40px;
+  /* background-color: rgba(0, 0, 0, 0.8); */
+  /* background-color: rgba(15, 15, 15, 0.44); */
+  height: 160px;
+  width: 600px;
+  border-radius: 15px;
+  color: white;
+  /* overflow: scroll;
+  white-space: nowrap; */
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.group-select-section {
+  height: 160px;
+  width: 280px;
+  border-radius: 15px;
+  background-color: rgba(15, 15, 15, 0.44);
+}
+
+.group-select-section1 {
+  height: 160px;
+  width: 280px;
+  border-radius: 15px;
+  background-color: rgba(15, 15, 15, 0.44);
+}
+
+.select-body {
+  margin-top: 40px;
+  /* background-color: rgba(0, 0, 0, 0.8); */
+  background-color: rgba(15, 15, 15, 0.44);
+  height: 160px;
+  width: 600px;
+  border-radius: 15px;
+  color: white;
+  overflow: scroll;
+  white-space: nowrap;
+}
+
+.select-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --end-- SELECT  -----------------------------------------------------------------end-- */
+
+
+
+
+/* span {
+  font-size: 12;
+} */
+
+/* .mardonnnnnnnaaaaa {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 2em;
+  width: 100%;
+  max-width: 350px;
+  height: 100%;
+  max-height: 250px;
+  margin: 1em;
+  color: white;
+} */
+
+.greet-width {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 400px; */
+}
+
+.greeting {
+  display: flex;
+  align-items: center;
+  width: 600px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: bolder;
+  line-height: 1.15em;
+  color: white;
+  position: absolute;
+  bottom: 90px;
+  /* margin-top: 20px;
+  margin-bottom: 10px; */
+  /* justify-content: center; */
+}
+
+.greeting1 {
+  width: 600px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  /* line-height: 1.125em; */
+  color: white;
+  /* margin-bottom: 10px; */
+  position: absolute;
+  bottom: 49px;
+}
+
+.greeting2 {
+  width: 500px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  /* line-height: 1.125em; */
+  color: white;
+  /* margin-bottom: 10px; */
+  position: absolute;
+  bottom: 25px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.react-calendar {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1em;
+  width: 600px;
+  max-width: 100%;
+  height: 340px;
+  /* background-color: #fff; */
+  color: white;
+  /* border-radius: 8px; */
+  /* box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); */
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.125em;
+  border: rgba(0, 0, 0, 0.8);
+  border-radius: 15px;
+}
+.react-calendar--doubleView {
+  width: 700px;
+}
+.react-calendar--doubleView .react-calendar__viewContainer {
+  display: flex;
+  margin: -0.5em;
+}
+.react-calendar--doubleView .react-calendar__viewContainer > * {
+  width: 50%;
+  margin: 0.5em;
+}
+.react-calendar,
+.react-calendar *,
+.react-calendar *:before,
+.react-calendar *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.react-calendar button {
+  margin: 0;
+  border: 0;
+  outline: none;
+}
+.react-calendar button:enabled:hover {
+  cursor: pointer;
+}
+
+
+/* --start-- calendar navigation label --start-- */
+
+.react-calendar__navigation__label__labelText {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 15px;
+}
+.react-calendar__navigation {
+  display: flex;
+  height: 44px;
+  margin-bottom: 1em;
+}
+.react-calendar__navigation button {
+  min-width: 44px;
+  background: none;
+  color: white;
+}
+.react-calendar__navigation button:disabled {
+  background-color: #f0f0f0;
+}
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+  /* background-color: #e6e6e6; */
+  background-color: #3b3b3b2c;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+/* --end-- calendar navigation label --end-- */
+
+
+.react-calendar__month-view__weekdays {
+  text-align: center;
+  text-transform: uppercase;
+  /* font-weight: bold; */
+  font-size: 0.75em;
+}
+.react-calendar__month-view__weekdays__weekday {
+  padding: 0.5em;
+  font-size: 13px;
+}
+.react-calendar__month-view__weekNumbers .react-calendar__tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75em;
+  font-weight: bold;
+}
+/* week days color */
+.react-calendar__month-view__days__day {
+  color: white;
+  /* font-size: 14px; */
+  font-weight: light;
+}
+/* weekend days color */
+.react-calendar__month-view__days__day--weekend {
+  color: white;
+  /* font-size: 14px; */
+  font-weight: light;
+}
+/* neighbouring month day color */
+.react-calendar__month-view__days__day--neighboringMonth {
+  color: rgb(87, 87, 87);
+  /* font-size: 14px; */
+  font-weight: light;
+}
+.react-calendar__year-view .react-calendar__tile,
+.react-calendar__decade-view .react-calendar__tile,
+.react-calendar__century-view .react-calendar__tile {
+  padding: 2em 0.5em;
+}
+.react-calendar__tile {
+  max-width: 100%;
+  padding: 10px 6.6667px;
+  background: none;
+  text-align: center;
+  line-height: 20px;
+  font-size: 13px;
+}
+
+
+.react-calendar__tile:disabled {
+  background-color: #60537493;
+  border-radius: 20px;
+  /* border-radius: 22px; */
+  /* background-color: rgba(18, 79, 93, 0.416);
+  box-shadow: 0px 0px 0px 1px rgba(18, 79, 93, 0.07);
+  color: rgb(98, 98, 98); */
+  color: rgb(156, 156, 156);
+}
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  background-color: #8d34d64c;
+  box-shadow: 0px 0px 0px 1px #8d34d64c;
+  border-radius: 20px;
+  /* background-color: #8d34d61d; */
+}
+
+.react-calendar__tile--now {
+  /* border: 2px solid #4734d6;
+  outline: 5px solid #27d9b4;
+  background: rgb(82, 180, 175); */
+  box-shadow: 0px 0px 0px 1px #605374;
+  border-radius: 20px;
+}
+
+.react-calendar__tile--active {
+  /* background: #743bba; */
+  background: #8d34d6;
+  border-radius: 20px;
+  color: white;
+  font-weight: bolder;
+}
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+  background: #8d34d6;
+  border-radius: 20px;
+  box-shadow: 0px 0px 0px 1px #8d34d6;
+}
+
+.unavailable {
+  background-color: #60537493;
+  border-radius: 20px;
+  /* background-color: #605374; */
+  /* box-shadow: 0px 0px 0px 1px #605374; */
+}
+
+
+
+
+.error {
+  display: flex;
+  max-width: fit-content;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid #e7195a;
+  color: #e7195a;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+
+.success {
+  display: flex;
+  max-width: fit-content;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  background: #f1ffeff6;
+  border: 1px solid #4BB543;
+  color: #4BB543;
+  border-radius: 4px;
+  margin: 55px 0;
+}
+
+.nav-center {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.center-child1 {
+  /* border: 2px solid pink; */
+  width: 500px;
+}
+
+/* css for bar with weather
+.text-cnt {
+  text-decoration: none;
+  text-align: left;
+  color: #000000;
+  margin-left: 15px;
+  float: left;
+  /* padding: 9px 16px; */
+  /* font-weight: 500;
+  font-size: 100%;
+  letter-spacing: 0.06em;
+  width: 100%;
+  height: 80px;
+} */ 
+
+/* css for bar with weather */
+.text-center {
+  text-decoration: none;
+  text-align: left;
+  color: #000000;
+  margin-left: 15px;
+  float: left;
+  padding: 9px 16px;
+  font-weight: 500;
+  font-size: 100%;
+  letter-spacing: 0.06em;
+  width: 100%;
+}
+
+.weather {
+  text-decoration: none;
+  text-align: left;
+  color: white;
+  margin-left: 15px;
+  margin-top: 5px;
+  float: left;
+  padding: 9px 16px;
+  font-weight: 500;
+  font-size: 90%;
+  letter-spacing: 0.06em;
+  width: 100%;
+}
+
+.temperature {
+  margin-top: 20px;
+  margin-left: 30px;
+  color: white;
+  /* float: left; */
+  width: 100%;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+}
+
+.conditions {
+  margin-left: 30px;
+  margin-top: 20px;
+  color: white;
+  /* float: left; */
+  width: 100%;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+}
+
+.icon {
+  width: 80px;
+  max-width: 25%;
+  max-height: 25%;
+}
+
+.input-evnt {
+  /* margin-top: 20px; */
+  margin-left: 27px;
+  margin-right: 15px;
+  background-color: rgba(255, 255, 255, 0.504);
+  /* letter-spacing: 1.3px; */
+  box-sizing: border-box;
+  width: 150px;
+  border: none;
+  color: #000000;
+  padding: 11px 0px 12px 10px;
+  font-size: 17px;
+  outline: none;
+  height: 25px;
+  border-radius: 5px;
+  /* maxlength: 40; */
+  /* position: absolute;
+  bottom: 10px; */
+}
+
+.input-bttn {
+  background-color: #746292;
+  text-decoration: none;
+  text-align: center;
+  color: #00000085;
+  height: 25px;
+  font-weight: 500;
+  font-family: inherit;
+  letter-spacing: 0.06em;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  /* margin-bottom:5px; */
+  /* position: absolute;
+  left: 10px;
+  bottom: 2px; */
+}
+
+.input-event {
+  margin-top: 10px;
+  margin-left: 30px;
+  background-color: rgba(241, 241, 241, 0.272);
+  letter-spacing: 1.3px;
+  box-sizing: border-box;
+  width: 30%;
+  border: none;
+  color: #000000;
+  padding: 10px 1px 12px 25px;
+  font-size: 17px;
+  outline: none;
+  height: 25px;
+  maxlength: 40;
+}
+
+.input-button {
+  background-color: #00000051;
+  text-decoration: none;
+  text-align: center;
+  color: #00000085;
+  height: 25px;
+  font-weight: 500;
+  font-family: inherit;
+  letter-spacing: 0.06em;
+  border: none;
+  cursor: pointer;
+  margin-bottom:5px;
+}
+
+.input-button:hover {
+  color: rgba(135, 135, 135, 0.613);
+  background: rgba(255, 255, 255, 0.428);
+}
+
+.current-date-select {
+  color: white;
+  height: 20px;
+  /* margin-bottom: 30px; */
+  /* padding-bottom: 10px; */
+  /* padding: 0px 0px 12px 10px; */
+  font-weight: bold;
+  letter-spacing: 0.08em;
+}
+
+.submit-form  {
+  width: 280px;
+  /* height: 30px; */
+  position: absolute;
+  
+  /* left: 10px; */
+  bottom: 25px;
+  /* justify-content: center; */
+  /* align-items: center;  */
+}
+
+.selected-text {
+  height: 60px;
+  margin-left: 30px;
+  margin-top: 38px;
+}
+
+.update-button {
+  /* background-color: rgba(0, 0, 0, 0.8); */
+  /* color: rgb(57, 56, 56);
+  height: 17px;
+  width: 60px;
+  font-size: 10px;
+  margin-right: 20px; */
+  background: none!important;
+  border: none;
+  padding: 0!important;
+  /*optional*/
+  font-family: arial, sans-serif;
+  /*input has OS specific font-family*/
+  color: rgba(108, 108, 108, 0.796);
+  text-decoration: underline;
+  cursor: pointer;
+  background-color: #00000051;
+  text-align: center;
+  color: #00000085;
+  height: 25px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  margin-left:10px;
+}
+
+.update-button:hover {
+  color: #64358a;
+}
